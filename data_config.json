@@ -1,0 +1,25 @@
+{
+    "questions": [
+        {
+            "quiz name": "Math Quiz",
+            "questions": [
+                {"question": "What is 2 + 2?", "answer": "4"},
+                {"question": "What is 3 * 3?", "answer": "9"}
+            ]
+        },
+        {
+            "quiz name": "Geography Quiz",
+            "questions": [
+                {"question": "What is the capital of France?", "answer": "Paris"},
+                {"question": "What is the largest ocean?", "answer": "Pacific Ocean"}
+            ]
+        },
+        {
+            "quiz name": "Science Quiz",
+            "questions": [
+                {"question": "What planet is known as the Red Planet?", "answer": "Mars"},
+                {"question": "What is the chemical symbol for water?", "answer": "H2O"}
+            ]
+        }
+    ]
+}
