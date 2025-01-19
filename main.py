@@ -25,12 +25,10 @@ def please_select_batch():
             else:
                 print(f"Please select the correct quiz name from the list." + "\n" + f"{recall_question_dict}")
         else:
-            invalid_input = input("Invalid input: {decision_number + 1}, please select a valid quiz number: ")
-            if 0 <= invalid_input < len(question_dict):
-                return True
-            else:
-                for retry_i in range(retry_max):
-                    input("Please select a valid quiz number: ")
+            invalid_input = input("Invalid input, please select a valid quiz number: ")
+            retry_i = 0    
+            for retry_i in range(retry_max):
+                input("Please select a valid quiz number: ")
                 exit("You have exceeded the maximum number of retries. Exiting the program.")
                     
                     
