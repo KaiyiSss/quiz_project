@@ -10,7 +10,8 @@ class question_database:
     def get_question(self):
         return self.question_list
 
-def load_questions_from_json(file_path):
-    with open(file_path, 'r') as file:
-        data = json.load(file)
-        return data['questions']
+    def load_questions_from_json(self, file_path) -> json:
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+            for question in data['questions']:
+                self.add_question(question)
